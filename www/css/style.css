@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+.heure{
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  height: 60px;
+  border-width: 1px;
+  border-style: solid;
+}
+.quartdheure{
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  border-style: solid;
+}
+.demiheure{
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  top:30px;
+}
+.troisquartheure{
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  top:45px;
+}
