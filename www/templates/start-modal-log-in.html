@@ -1,0 +1,66 @@
+<div id="start-modal-log-in.html" type="text/ng-template" h>
+  <ion-modal-view>
+    <ion-content>
+      <div class="row">
+        <div class="col-90"></div>
+        <div class="col-10">
+            <div class="button button-icon icon ion-close-round" ng-click=closeModal('1');></div>
+        </div>
+      </div>
+      <br></br>
+      <h2 class="text-center">Log in to Extendate</h2>
+      <br></br>
+      
+      <!-- PSEUDO-->
+        <div class="row" style="margin:15px 0px 15px 0px">
+          <div class="col col-10 col-offset-10 col-bottom" style="background-color:lightgrey;border-color:black;border-style: solid;border-width: 1px 0px 1px 1px;border-radius: 5px 0px 0px 5px;">
+            <div class="icon ion-person" style="font-size:24px;color:grey;text-align:center;"></div>
+          </div>
+          <div class="col col col-bottom" style="background-color:white;border-color:grey;border-style:solid;border-width: 1px 1px 1px 0px;border-radius: 0px 5px 5px 0px;style=height:30px;width:30px;text-align:center;height:36px;">
+            <input type="text"  placeholder="Pseudo" ng-model="user.username"  style="height: 24px;line-height: 24px;">
+          </div>
+          <div class="col col-10"></div>
+        </div>   
+<!-- MOT DE PASSE-->
+        <div class="row" style="margin:15px 0px 15px 0px">
+          <div class="col col-10 col-offset-10 col-bottom" style="background-color:lightgrey;border-color:black;border-style: solid;border-width: 1px 0px 1px 1px;border-radius: 5px 0px 0px 5px;">
+            <div class="icon ion-locked" style="font-size:24px;color:grey;text-align:center;"></div>
+          </div>
+          <div class="col col col-bottom" style="background-color:white;border-color:grey;border-style:solid;border-width: 1px 1px 1px 0px;border-radius: 0px 5px 5px 0px;style=height:30px;width:30px;text-align:center;height:36px;">
+            <input type="password"  placeholder="Password" ng-model="user.password" style="height: 24px;line-height: 24px;">
+          </div>
+          <div class="col col-10"></div>
+        </div>   
+<!-- BOOL REMEMBER-->
+        <div class="row" style="margin:0px 0px 0px 0px;">
+          <div class="col col-offset-10" style="border-color=red;">
+            <ion-checkbox ng-model="user.rememberMe"  style="margin:0px 0px 0px -24px;">Remember me !</ion-checkbox>
+          </div>
+        </div>
+<!-- BOUTON -->
+        <div class="row">
+          <div class="col col-40 col-offset-10 col-center h6">
+              <a href="#/forgot-password">Forgot password ?</a>
+          </div>
+          <div class="col col-40 col-center">
+              <button class="button button-block button-balanced" ng-click="Entrez(user.username, user.password)">
+                LOG IN
+              </button>
+          </div>
+          <div class="col col-10"></div>
+        </div>
+<!-- RACCOURCI JOIN IN -->
+        <div class="item row item-stable">
+          <div class="col col-offset-10 col-center">
+            <h6>Don't have an Extendate account yet ?</h6>
+          </div>
+          <div class="col h6">
+            <a ng-click="closeModal('1');openModal('2')">Create Account</a>
+          </div>
+          <div class="col col-10"></div>
+        </div>
+      
+
+    </ion-content>
+  </ion-modal-view>
+</div>

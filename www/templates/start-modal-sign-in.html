@@ -1,0 +1,88 @@
+<div id="start-modal-sign-in.html" type="text/ng-template" h>
+  <ion-modal-view>
+    <ion-content>
+      <div class="row">
+        <div class="col-90"></div>
+        <div class="col-10">
+            <div class="button button-icon icon ion-close-round" ng-click="closeModal('2')";></div>
+        </div>
+      </div>
+      <br></br>
+      <h2 class="text-center">Create your Extendate account</h2>
+      
+      <!-- EMAIL-->
+        <div class="row" style="margin:15px 0px 15px 0px">
+          <div class="col col-10 col-offset-10 col-bottom" style="background-color:lightgrey;border-color:black;border-style: solid;border-width: 1px 0px 1px 1px;border-radius: 5px 0px 0px 5px;">
+            <div class="icon ion-email" style="font-size:24px;color:grey;text-align:center;"></div>
+          </div>
+          <div class="col col col-bottom" style="background-color:white;border-color:grey;border-style:solid;border-width: 1px 1px 1px 0px;border-radius: 0px 5px 5px 0px;style=height:30px;width:30px;text-align:center;height:36px;">
+            <input type="text"  placeholder="Email" ng-model="user.email"  style="height: 24px;line-height: 24px;">
+          </div>
+          <div class="col col-10"></div>
+        </div>
+        
+        <!-- PSEUDO-->
+        <div class="row" style="margin:15px 0px 15px 0px">
+          <div class="col col-10 col-offset-10 col-bottom" style="background-color:lightgrey;border-color:black;border-style: solid;border-width: 1px 0px 1px 1px;border-radius: 5px 0px 0px 5px;">
+            <div class="icon ion-person" style="font-size:24px;color:grey;text-align:center;"></div>
+          </div>
+          <div class="col col col-bottom" style="background-color:white;border-color:grey;border-style:solid;border-width: 1px 1px 1px 0px;border-radius: 0px 5px 5px 0px;style=height:30px;width:30px;text-align:center;height:36px;">
+            <input type="text"  placeholder="Pseudo" ng-model="user.username"  style="height: 24px;line-height: 24px;">
+          </div>
+          <div class="col col-10"></div>
+        </div>   
+
+
+<!-- MOT DE PASSE-->
+        <div class="row" style="margin:15px 0px 15px 0px">
+          <div class="col col-10 col-offset-10 col-bottom" style="background-color:lightgrey;border-color:black;border-style: solid;border-width: 1px 0px 1px 1px;border-radius: 5px 0px 0px 5px;">
+            <div class="icon ion-locked" style="font-size:24px;color:grey;text-align:center;"></div>
+          </div>
+          <div class="col col col-bottom" style="background-color:white;border-color:grey;border-style:solid;border-width: 1px 1px 1px 0px;border-radius: 0px 5px 5px 0px;style=height:30px;width:30px;text-align:center;height:36px;">
+            <input type="password"  placeholder="Password" ng-model="user.password" style="height: 24px;line-height: 24px;">
+          </div>
+          <div class="col col-10"></div>
+        </div>
+
+<!-- CONFIRMMOT DE PASSE-->
+        <div class="row" style="margin:15px 0px 15px 0px">
+          <div class="col col-10 col-offset-10 col-bottom" style="background-color:lightgrey;border-color:black;border-style: solid;border-width: 1px 0px 1px 1px;border-radius: 5px 0px 0px 5px;">
+            <div class="icon ion-unlocked" style="font-size:24px;color:grey;text-align:center;"></div>
+          </div>
+          <div class="col col col-bottom" style="background-color:white;border-color:grey;border-style:solid;border-width: 1px 1px 1px 0px;border-radius: 0px 5px 5px 0px;style=height:30px;width:30px;text-align:center;height:36px;">
+            <input type="password"  placeholder="Confirm Password" ng-model="user.confirmPassword" style="height: 24px;line-height: 24px;">
+          </div>
+          <div class="col col-10"></div>
+        </div>   
+
+<!-- BOUTON -->
+        <div class="row">
+          <div class="col col-center col-80 col-offset-10">
+              <button class="button button-block button-balanced" ng-click="Entrez(user.username, user.password)">
+                GET STARTED
+              </button>
+          </div>
+        </div>
+
+<!-- PRIVACY POLICY -->
+        <div class="row">
+          <div class="col col-center col-80 col-offset-10" h6>
+              <h6>By signin up, you're agree to the <a href="templates/static-TermsAndConditions.html">Terms & Conditions</a> and <a href="templates/static-PrivacyPolicy.html">Privacy Policy</a></h6>
+          </div>
+        </div>
+
+
+<!-- RACCOURCI JOIN IN -->
+        <div class="item row item-stable">
+          <div class="col col-offset-10 col-center">
+            <h6>Already have an ExtenDate account ?</h6>
+          </div>
+          <div class="col h6">
+            <a ng-click="closeModal('2');openModal('1')">Log In</a>
+          </div>
+          <div class="col col-10"></div>
+        </div>
+      
+    </ion-content>
+  </ion-modal-view>
+</div>
